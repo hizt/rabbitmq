@@ -1,0 +1,18 @@
+{
+    "name": "zt/rabbit-mq",
+    "description": "implement RabbitMQ delay queues",
+    "type": "library",
+    "authors": [
+        {
+            "name": "T",
+            "email": "zthi@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php-amqplib/php-amqplib": ">=2.6.1"
+    },
+    "autoload" :{
+        "psr-4": { "":"src" }
+    }
+}
