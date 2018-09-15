@@ -113,7 +113,6 @@ class RabbitMQ
     {
         $tempCallback = function ($messageObj) use ($callback) {
             $messageObj = (unserialize($messageObj->body));
-            var_dump($messageObj);
             call_user_func_array($callback, [$messageObj]);
         };
 
